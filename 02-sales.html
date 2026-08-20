@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>02 · Sales — The daily pair</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root { --burgundy:#4A1A22; --gold:#B8924A; --cream:#F7F3EA; --ink:#1C1915; --mist:#6F695D; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #2a1418; font-family: Outfit, sans-serif; color: var(--ink); }
+.preview-bar { position: sticky; top: 0; z-index: 40; display: flex; justify-content: space-between; gap: 12px; padding: 8px 16px; background: #111; color: #fff; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+.preview-bar a { color: var(--gold); text-decoration: none; }
+.wrap { max-width: 640px; margin: 0 auto; background: var(--cream); }
+.ann { text-align: center; padding: 11px 16px; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mist); }
+.head { padding: 8px 28px 18px; text-align: center; }
+.head b { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 400; letter-spacing: 0.08em; }
+.hero { position: relative; color: #fff; }
+.hero img { width: 100%; height: 360px; object-fit: cover; object-position: center 20%; display: block; }
+.hero .tx { position: absolute; inset: auto 0 0; padding: 28px 28px 32px; background: linear-gradient(transparent, rgba(20,10,12,.78)); }
+.hero h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-size: clamp(32px, 7vw, 44px); line-height: 1; margin: 0; }
+.hero p { margin: 8px 0 0; font-weight: 300; color: #f0e4d4; }
+.skus { display: grid; grid-template-columns: 1fr 1fr; gap: 0; padding: 8px 8px 0; }
+.sku { padding: 18px 14px 24px; text-align: center; }
+.sku img { width: 100%; height: 240px; object-fit: contain; background: #efe8d6; }
+.sku .from { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mist); margin-top: 12px; }
+.sku h2 { font-family: "Cormorant Garamond", serif; font-size: 22px; font-weight: 400; margin: 6px 0 0; }
+.sku .price { margin: 8px 0 0; font-weight: 300; }
+.sku .price b { font-weight: 500; }
+.sku .price s { color: var(--mist); margin-right: 6px; }
+.link { display: inline-block; margin-top: 12px; text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 2px; font-size: 13px; }
+.pair { padding: 28px 28px 8px; text-align: center; border-top: 1px solid #e6decc; }
+.pair img { width: 100%; max-height: 220px; object-fit: cover; margin-bottom: 16px; }
+.pair h3 { font-family: "Cormorant Garamond", serif; font-size: 32px; font-weight: 400; margin: 0; }
+.pair p { font-weight: 300; color: #3d372f; }
+.pair .price { font-size: 18px; margin: 8px 0 0; }
+.pair .price s { color: var(--mist); margin-right: 6px; font-size: 15px; }
+.trust { display: grid; grid-template-columns: 1fr 1fr; padding: 8px 12px 28px; }
+.trust div { padding: 14px; font-size: 12px; font-weight: 300; }
+.trust b { display: block; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; font-size: 10px; margin-bottom: 4px; }
+.foot { padding: 24px 28px 32px; text-align: center; font-size: 11px; color: var(--mist); line-height: 1.6; border-top: 1px solid #e6decc; }
+.note { font-size: 11px; color: var(--mist); padding: 0 28px 8px; text-align: center; }
+@media (max-width: 520px) { .skus { grid-template-columns: 1fr; } .hero img { height: 280px; } }
+</style>
+</head>
+<body>
+<div class="preview-bar">
+  <span>02 / Sales</span>
+  <nav><a href="index.html">All</a> · <a href="website.html">Website</a> · <a href="01-informational.html">01</a> · <a href="03-creative.html">03</a></nav>
+</div>
+<main class="wrap">
+  <p class="ann">Complimentary shipping from $50 · 30-day courtesy</p>
+  <header class="head"><b>50/50</b></header>
+  <section class="hero">
+    <img src="assets/hero-woman-coffee.png?v=4" alt="Coffee ritual portrait">
+    <div class="tx">
+      <h1>Morning coffee.<br>Afternoon matcha.</h1>
+      <p>The two cups that already structured the day — now with Lion’s Mane, Cordyceps and Reishi in both.</p>
+    </div>
+  </section>
+  <div class="skus">
+    <article class="sku">
+      <img src="assets/coffee-box-tight.png?v=6" alt="Coffee with Mushrooms">
+      <p class="from">Arabica · instant</p>
+      <h2>Coffee With Mushrooms</h2>
+      <p class="price"><b>$100</b></p>
+      <a class="link" href="website.html">Select</a>
+    </article>
+    <article class="sku">
+      <img src="assets/matcha-box-tight.png?v=6" alt="Matcha with Mushrooms">
+      <p class="from">Ceremonial-style</p>
+      <h2>Matcha with Mushrooms</h2>
+      <p class="price"><b>$100</b></p>
+      <a class="link" href="website.html">Select</a>
+    </article>
+  </div>
+  <aside class="pair">
+    <img src="assets/bundle-pair.png?v=6" alt="The daily pair — both rectangular cartons">
+    <h3>The daily pair</h3>
+    <p>1 Coffee with Mushrooms + 1 Matcha with Mushrooms. Morning and afternoon, the same two cartons.</p>
+    <p class="price"><b>$180</b></p>
+    <a class="link" href="website.html">Shop the pair</a>
+  </aside>
+  <p class="note">$100 a blend as the client asked (matcha carton prints $100 USD / $130 CAD; coffee set to match). Pair $180 in this preview — confirm final bundle math.</p>
+  <div class="trust">
+    <div><b>Shipping</b>Complimentary from $50</div>
+    <div><b>Courtesy</b>30 days, as on the current shop</div>
+    <div><b>Ingredients</b>Plant based · no fillers</div>
+    <div><b>Serve</b>Hot or over ice</div>
+  </div>
+  <footer class="foot">
+    50/50 Functional Beverage Co. · Oceanside, CA · @Drink5050<br>
+    Sales direction — design preview, not a live send.
+  </footer>
+</main>
+</body>
+</html>

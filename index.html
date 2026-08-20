@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>50/50 by Dr. Kesha — design preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --green:#14261C; --gold:#C6A15B; --cream:#F4EFE4; --ink:#1A1714; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--green); color: var(--cream); font-family: Outfit, sans-serif; }
+  .page { max-width: 880px; margin: 0 auto; padding: 48px 24px 80px; }
+  .kicker { letter-spacing: 0.22em; text-transform: uppercase; font-size: 11px; color: var(--gold); }
+  h1 { font-family: "Cormorant Garamond", serif; font-size: clamp(40px, 8vw, 68px); line-height: 0.92; font-weight: 400; margin: 12px 0 0; }
+  .lead { max-width: 38em; color: #d8d0c2; line-height: 1.5; font-weight: 300; }
+  .grid { display: grid; gap: 14px; margin-top: 36px; }
+  @media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } .grid .wide { grid-column: 1 / -1; } }
+  a.card { display: flex; flex-direction: column; border: 1px solid rgba(198,161,91,.35); padding: 22px; text-decoration: none; color: inherit; min-height: 100%; }
+  a.card:hover { border-color: var(--gold); }
+  .n { color: var(--gold); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+  a.card h2 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-size: 28px; margin: 10px 0 0; }
+  a.card p { color: #c9c0b2; font-size: 14px; font-weight: 300; line-height: 1.45; flex: 1; }
+  .go { margin-top: 16px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid var(--gold); align-self: flex-start; }
+  .note { margin-top: 40px; font-size: 12px; color: #9a9286; line-height: 1.5; }
+</style>
+</head>
+<body>
+<main class="page">
+  <p class="kicker">Prep · not a live send · 50/50 by Dr. Kesha</p>
+  <h1>Four ways in<br>to the launch.</h1>
+  <p class="lead">Website redesign after <a href="https://www.matchahabit.de/" style="color:var(--gold)">matchahabit.de</a> — 50/50 copy, pack art, and California-crafted tone. Plus three email directions so the team can compare style, not just copy.</p>
+  <div class="grid">
+    <a class="card wide" href="website.html">
+      <span class="n">Website</span>
+      <h2>Storefront redesign</h2>
+      <p>Matchahabit’s quiet homepage. $100 a blend, $180 pair, the rectangular launch cartons, four journal recipes, founders, brew.</p>
+      <span class="go">Open website</span>
+    </a>
+    <a class="card" href="01-informational.html">
+      <span class="n">01 · Informational</span>
+      <h2>A letter from the ritual</h2>
+      <p>Editorial letter. Headline is the two rituals — coffee morning, matcha afternoon — not the pizza aside. Founders, mushrooms, brew.</p>
+      <span class="go">Open 01</span>
+    </a>
+    <a class="card" href="02-sales.html">
+      <span class="n">02 · Sales</span>
+      <h2>The daily pair</h2>
+      <p>Commerce layout. $100 blends, $180 pair, free shipping from $50.</p>
+      <span class="go">Open 02</span>
+    </a>
+    <a class="card" href="03-creative.html">
+      <span class="n">03 · Creative</span>
+      <h2>Made for her</h2>
+      <p>Art-first, with enough copy to stand as a campaign: story, cups, rectangular cartons, and $100 / $180 at the end.</p>
+      <span class="go">Open 03</span>
+    </a>
+  </div>
+  <p class="note">Sources: drink5050.com journal, the two launch packs, matchahabit.de structure. Shop prices follow the client’s $100-a-blend ask (matcha carton print). Pair $180 is a preview figure. Claims stay “associated with.”</p>
+</main>
+</body>
+</html>

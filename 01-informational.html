@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01 · Informational — A letter from the ritual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root { --green:#14261C; --gold:#B8924A; --cream:#F7F3EA; --ink:#1C1915; --mist:#6F695D; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #ddd6c8; font-family: Outfit, sans-serif; color: var(--ink); }
+.preview-bar { position: sticky; top: 0; z-index: 40; display: flex; justify-content: space-between; gap: 12px; padding: 8px 16px; background: #111; color: #fff; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+.preview-bar a { color: var(--gold); text-decoration: none; }
+.wrap { max-width: 640px; margin: 28px auto 64px; background: var(--cream); }
+.top { padding: 16px 36px; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mist); }
+.mast { padding: 12px 40px 8px; text-align: center; }
+.mast .word { font-family: "Cormorant Garamond", serif; font-size: 22px; letter-spacing: 0.16em; }
+.rule { width: 40px; height: 1px; background: var(--gold); margin: 16px auto; }
+.mast h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0; }
+.mast .deck { max-width: 28em; margin: 14px auto 0; font-weight: 300; color: #3d372f; line-height: 1.55; font-size: 15px; }
+.hero { margin: 20px 0 0; }
+.hero img { width: 100%; height: 340px; object-fit: cover; object-position: center 25%; display: block; }
+.body { padding: 8px 44px 12px; }
+.body p { font-weight: 300; line-height: 1.7; font-size: 16px; }
+.body h2 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-size: 26px; margin: 28px 0 8px; }
+.greet { font-style: italic; font-family: "Cormorant Garamond", serif; font-size: 22px; }
+.sign { margin-top: 28px; }
+.sign .name { font-family: "Cormorant Garamond", serif; font-size: 22px; font-style: italic; margin: 0; }
+.sign .role { margin: 4px 0 0; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mist); }
+.portrait { margin: 8px 44px 0; }
+.portrait img { width: 100%; height: auto; display: block; }
+.portrait figcaption { font-size: 11px; color: var(--mist); margin-top: 8px; letter-spacing: 0.04em; }
+.mush { padding: 14px 0; border-top: 1px solid #e4dcc9; }
+.mush b { display: block; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.boxes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 8px 44px 28px; }
+.boxes img { width: 100%; height: 220px; object-fit: contain; background: #efe8d6; }
+.cta { display: inline-block; margin: 8px 10px 8px 0; padding: 14px 28px; background: var(--green); color: #fff; text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; font-size: 11px; }
+.cta.ghost { background: transparent; color: var(--green); border: 1px solid var(--green); }
+.cta-row { margin: 22px 0 8px; }
+.foot { padding: 36px 32px 40px; background: var(--green); color: #cfc6b6; font-size: 12px; line-height: 1.65; text-align: center; }
+.foot .word { font-family: "Cormorant Garamond", serif; letter-spacing: 0.18em; font-size: 18px; color: #fff; margin: 0 0 10px; }
+.foot a { color: var(--gold); text-decoration: none; }
+.foot .social { margin: 16px 0; letter-spacing: 0.12em; text-transform: uppercase; font-size: 11px; }
+.foot .legal { margin-top: 18px; font-size: 11px; color: #9a9286; }
+.foot .unsub { margin-top: 10px; font-size: 11px; }
+.note { font-size: 11px; color: var(--mist); }
+@media (max-width: 520px) {
+  .body, .mast, .portrait, .boxes { padding-left: 20px; padding-right: 20px; }
+  .hero img { height: 240px; }
+}
+</style>
+</head>
+<body>
+<div class="preview-bar">
+  <span>01 / Informational</span>
+  <nav><a href="index.html">All</a> · <a href="website.html">Website</a> · <a href="02-sales.html">02</a> · <a href="03-creative.html">03</a></nav>
+</div>
+<main class="wrap">
+  <p class="top"><span>50/50 by Dr. Kesha</span><span>A note</span></p>
+  <header class="mast">
+    <p class="word">50 / 50</p>
+    <div class="rule"></div>
+    <h1>Coffee in the morning.<br>Matcha in the afternoon.</h1>
+    <p class="deck">Two quiet marks in a full day — now with Lion’s Mane, Cordyceps and Reishi in both cups. Made for her. Without compromise.</p>
+  </header>
+  <div class="hero"><img src="assets/hero-woman-matcha.png?v=7" alt="Editorial portrait in the matcha palette"></div>
+  <div class="body">
+    <p class="greet">Dear friend,</p>
+    <p>I wanted to write to you the way the day actually starts — not with a product, but with a pause.</p>
+    <p>Medicine. Family. A full life. For me, those two cups were never just drinks. They were the marks that held the day together: coffee in the morning, matcha in the afternoon.</p>
+    <p>When Shri and I learned about the traditionally associated benefits of functional mushrooms, we wanted more from those rituals — without asking anyone to eat a mushroom they did not love. I still will not. Even on pizza.</p>
+  </div>
+  <figure class="portrait">
+    <img src="assets/founders.png?v=7" alt="Dr. Kesha Ajvalia, MD and Dr. Shri Ajvalia, PhD">
+    <figcaption>Dr. Kesha Ajvalia, MD &amp; Dr. Shri Ajvalia, PhD. Portrait generated for this preview — replace with an approved photograph.</figcaption>
+  </figure>
+  <div class="body">
+    <p>50/50 is that answer. Real Lion’s Mane, Cordyceps and Reishi, folded into ceremonial-style matcha and specialty Arabica. Functional ingredients, elevated into a ritual worth looking forward to. Crafted with care in Southern California. Proudly served in select wellness resorts and med spas.</p>
+    <p class="cta-row">
+      <a class="cta" href="website.html">Shop the blends</a>
+      <a class="cta ghost" href="website.html#story">Read our story</a>
+    </p>
+    <h2>What “associated with” means</h2>
+    <p>We stay with the language on the pack. These blends are associated with focus, energy and calm. They are plant-based, naturally caffeinated, made without fillers. They are not a medical claim.</p>
+    <div class="mush"><b>Lion’s Mane</b><p>In the cup for a clear head — the morning page, the afternoon reset.</p></div>
+    <div class="mush"><b>Cordyceps</b><p>Traditionally reached for when the day needs lift, not jitter.</p></div>
+    <div class="mush"><b>Reishi</b><p>The quieter third. Balance, after the first two have done their work.</p></div>
+    <h2>How to brew</h2>
+    <p>Scoop 1–2 tsp into a 6–8 oz cup. Pour hot water. Stir until dissolved. Enjoy hot, or pour over ice. The same four steps for coffee and for matcha.</p>
+    <p>Coffee with Mushrooms and Matcha with Mushrooms, $100 each. The daily pair, $180. Complimentary shipping from $50.</p>
+    <p class="cta-row"><a class="cta" href="website.html">Shop 50/50</a></p>
+    <div class="sign">
+      <p>With care,</p>
+      <p class="name">Kesha</p>
+      <p class="role">Dr. Kesha Ajvalia, MD · Founder</p>
+    </div>
+    <p class="note">A few lines above can be replaced with the client’s final letter. Prices follow the $100-a-blend ask.</p>
+  </div>
+  <div class="boxes">
+    <img src="assets/matcha-box-tight.png?v=7" alt="Matcha carton">
+    <img src="assets/coffee-box-tight.png?v=7" alt="Coffee carton">
+  </div>
+  <footer class="foot">
+    <p class="word">50 / 50</p>
+    <p>50/50 Functional Beverage Co.<br>
+    815 Mission Ave, Suite 202<br>
+    Oceanside, CA 92054</p>
+    <p class="social">
+      <a href="https://drink5050.com/">drink5050.com</a> ·
+      <a href="https://www.instagram.com/drink5050/">@Drink5050</a> ·
+      <a href="mailto:drkesha5050@gmail.com">drkesha5050@gmail.com</a>
+    </p>
+    <p class="unsub">
+      <a href="#">Unsubscribe</a> ·
+      <a href="#">Update preferences</a> ·
+      <a href="01-informational.html">View in browser</a>
+    </p>
+    <p class="legal">You received this because you subscribed at drink5050.com. Informational direction — design preview, not a live send. © 2026 50/50 Functional Beverage Co.</p>
+  </footer>
+</main>
+</body>
+</html>
